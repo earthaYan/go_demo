@@ -1,3 +1,3 @@
-module test_mod
+module go_demo
 
 go 1.19
