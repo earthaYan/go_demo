@@ -1,7 +1,7 @@
 package main 
 import (
 	"fmt"
-	"go_demo/mathClass"
+	"test_mod/mathClass"
 )
 
 func main(){
