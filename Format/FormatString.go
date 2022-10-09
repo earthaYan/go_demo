@@ -16,7 +16,7 @@ func FormatVariable(){
 	var b bool
 	var s string
 	var name1, name2, name3 int
-name1, name2, name3 = 1, 2,'a'
+	name1, name2, name3 = 1, 2,'a'
 	fmt.Printf("零值:%d %v %v %v %q\n",i,m,f,b,s)
 	fmt.Printf("赋值:%d %d %v \n",name1, name2, name3)
 	fmt.Printf("地址：%d\n",&i)
@@ -45,4 +45,12 @@ func GetIOTA(){
 		i          //8
 	)	
 	fmt.Printf("ITOA:%v %v %v %q %q %v %v %v %v\n",a,b,c,d,e,f,g,h,i)
+}
+func Differ(){
+	var a int = 4
+	var ptr *int
+	ptr = &a
+	println("a的值为", a);    // 4
+	println("*ptr为", *ptr);  // 4
+	println("ptr为", ptr);    // 824633794744
 }

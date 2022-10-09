@@ -13,7 +13,5 @@ func main(){
 }
 func init(){
 	fmt.Println("init me first!")
-	Format.FormatVariable()
-	Format.GetArea()
-	Format.GetIOTA()
+	Format.Differ()
 }
