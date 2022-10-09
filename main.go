@@ -2,10 +2,10 @@ package main
 import (
 	"fmt"
 	"test_mod/mathClass"
+	"test_mod/Format"
 )
 
 func main(){
-	fmt.Println("Hello, World!")
 	sum:=mathClass.Add(1,2)
 	sub:=mathClass.Sub(3,2)
 	fmt.Println(sum)
@@ -13,4 +13,7 @@ func main(){
 }
 func init(){
 	fmt.Println("init me first!")
+	Format.FormatVariable()
+	Format.GetArea()
+	Format.GetIOTA()
 }
