@@ -1,12 +1,21 @@
-package main 
+package main
+
 import (
 	"fmt"
-	"test_mod/mathClass"
+	"test_mod/functionList"
 )
 
-func main(){
-	mathClass.LoopBreakWithLabel()
+func main() {
+	nextNumber := functionList.GetSequence()
+	fmt.Println(nextNumber())
+	fmt.Println(nextNumber())
+	fmt.Println(nextNumber())
+
+	nextNumber1 := functionList.GetSequence()
+	fmt.Println(nextNumber1())
+	fmt.Println(nextNumber1())
 }
-func init(){
+func init() {
 	fmt.Println("init me first!")
+
 }
