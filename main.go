@@ -9,5 +9,5 @@ func main() {
 }
 func init() {
 	fmt.Println("init me first!")
-	errors.TestError()
+	errors.TestBF()
 }
