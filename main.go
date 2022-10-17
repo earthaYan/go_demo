@@ -2,20 +2,11 @@ package main
 
 import (
 	"fmt"
-	"test_mod/functionList"
+	complex "test_mod/ArrayDemo"
 )
 
-func main() {
-	nextNumber := functionList.GetSequence()
-	fmt.Println(nextNumber())
-	fmt.Println(nextNumber())
-	fmt.Println(nextNumber())
-
-	nextNumber1 := functionList.GetSequence()
-	fmt.Println(nextNumber1())
-	fmt.Println(nextNumber1())
-}
+func main() {}
 func init() {
 	fmt.Println("init me first!")
-
+	complex.TestMap()
 }
