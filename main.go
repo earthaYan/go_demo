@@ -2,12 +2,12 @@ package main
 
 import (
 	"fmt"
-	"test_mod/Interface"
+	errors "test_mod/ErrorTest"
 )
 
 func main() {
 }
 func init() {
 	fmt.Println("init me first!")
-	Interface.TestInterfaceDemo()
+	errors.TestError()
 }
