@@ -1,0 +1,13 @@
+syntax = "proto3";
+option go_package = "github.com/earthaYan/go_demo/print";
+
+service Print {
+  rpc PrintHello(PrintRequest) returns (PrintResponse){
+  }
+}
+message PrintRequest{
+  string name=1;
+}
+message PrintResponse{
+  string message=1;
+}

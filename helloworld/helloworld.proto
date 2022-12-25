@@ -1,0 +1,32 @@
+
+syntax = "proto3";
+
+option go_package = "github.com/earthaYan/go_demo/helloworld";
+
+package helloworld;
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting  
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;  //用户名称
+}
+
+// The response message containing the greetings
+message HelloReply {
+  string message = 1;
+  Sex sex=2;
+}
+enum Sex{
+  // 通过为不同的枚举常量分配相同的值来定义别名
+  option allow_alias=true;
+  FEMALE = 0;
+  MALE =1;
+  OTHER =1;
+}
+
+
