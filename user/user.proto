@@ -1,0 +1,21 @@
+syntax = "proto3";
+package user;
+option go_package="github.com/earthaYan/go_demo/user";
+
+service User{
+  rpc GetUserInfo(GetUserInfoRequest) returns (GetUserInfoResponse){} 
+}
+message GetUserInfoRequest{
+  string class=1;
+  // 通过 optional，我们可以将一个字段编译为指针类型。
+  optional string username=2;
+  optional string user_id=3;
+}
+message GetUserInfoResponse{
+  string class = 1; 
+  string user_id = 2; 
+  string username = 3; 
+  string address = 4; 
+  string sex = 5; 
+  string phone = 6;
+}
