@@ -48,8 +48,8 @@ func upload(w http.ResponseWriter, r *http.Request) {
 		t, _ := template.ParseFiles("upload.gtpl")
 		t.Execute(w, token)
 	} else {
-		r.ParseMultipartForm(32 << 20)                 //参数表示maxMemory,把上传的文件存储在内存和临时文件中
-		file, handler, err := r.FormFile("uploadfile") //获取上面的文件句柄
+		r.ParseMultipartForm(32 << 20)                 //1.参数表示maxMemory,把上传的文件存储在内存和临时文件中
+		file, handler, err := r.FormFile("uploadfile") //2.获取上面的文件句柄
 		if err != nil {
 			fmt.Println(err)
 			return
