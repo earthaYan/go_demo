@@ -23,6 +23,7 @@ require (
 	github.com/jinzhu/now v1.1.3 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/leodido/go-urn v1.2.1 // indirect
+	github.com/lib/pq v1.10.7
 	github.com/marmotedu/api v1.6.3 // indirect
 	github.com/marmotedu/component-base v1.6.2 // indirect
 	github.com/marmotedu/errors v1.0.2 // indirect
